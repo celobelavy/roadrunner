@@ -2,7 +2,7 @@ plugins {
     id("java")
 }
 
-group = "org.zerock"
+group = "com.nyahyun"
 version = "1.0-SNAPSHOT"
 
 repositories {
