@@ -1,0 +1,6 @@
+name: RoadRunner
+version: 0.0.1
+main: com.nyahyun.plugins.RoadRunner
+description: This plugin is that Running Fast as much as mine cart However don't consume hunger
+author: hamnahyun
+api-version: 1.21
