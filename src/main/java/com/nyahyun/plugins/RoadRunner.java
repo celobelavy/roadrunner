@@ -15,7 +15,7 @@ public class RoadRunner extends JavaPlugin implements Listener {
     }
 
     @EventHandler
-    public void onPlayterJoin(PlayerJoinEvent event) {
+    public void onPlayerJoin(PlayerJoinEvent event) {
         event.getPlayer().sendMessage(Component.text("Hello, " + event.getPlayer().getName() + "!"));
     }
 }
