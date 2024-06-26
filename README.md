@@ -6,9 +6,18 @@ Paper 플러그인을 이용해 마인 카트만큼 빠른 속도로 달리면�
 
 # 참고자료
 
-paper 프로젝트 셋팅 자료
+paper 프로젝트 셋팅 자료 및 참고자료
 
 https://docs.papermc.io/paper/dev/project-setup
+
+Paper Java doc
+https://jd.papermc.io/paper/1.21/
+
+https://jd.papermc.io/paper/1.21/org/bukkit/event/player/PlayerMoveEvent.html
+
+https://jd.papermc.io/paper/1.21/org/bukkit/event/entity/EntityExhaustionEvent.html
+
+https://jd.papermc.io/paper/1.21/org/bukkit/entity/Player.html
 
 페이퍼 테스트 자료
 
