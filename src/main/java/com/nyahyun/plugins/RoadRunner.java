@@ -46,11 +46,11 @@ public class RoadRunner extends JavaPlugin implements Listener {
     @EventHandler
     public void onPlayerToggleSprint(PlayerToggleSprintEvent event) {
         Player player = event.getPlayer();
-        getLogger().info(Boolean.valueOf(player.isSprinting()).toString());
-        if (player.isSprinting()) { // isSprinting() is return false when running
-            player.setWalkSpeed(0.2f);
-       } else {
+        //getLogger().info(Boolean.valueOf(event.isSprinting()).toString());
+        if (event.isSprinting()) {
             player.setWalkSpeed(0.4f);
+       } else {
+            player.setWalkSpeed(0.2f);
         }
         //getLogger().info((Float.valueOf(event.getPlayer().getWalkSpeed())).toString());
 //        float playerDefaultWalk = player.getWalkSpeed();
