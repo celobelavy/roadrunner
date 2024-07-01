@@ -10,6 +10,10 @@ import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.event.player.PlayerMoveEvent;
 import org.bukkit.event.player.PlayerToggleSprintEvent;
 import org.bukkit.plugin.java.JavaPlugin;
+import org.bukkit.event.entity.EntityExhaustionEvent;
+
+import static org.bukkit.event.entity.EntityExhaustionEvent.ExhaustionReason.JUMP_SPRINT;
+import static org.bukkit.event.entity.EntityExhaustionEvent.ExhaustionReason.SPRINT;
 
 public class RoadRunner extends JavaPlugin implements Listener {
 
@@ -55,5 +59,13 @@ public class RoadRunner extends JavaPlugin implements Listener {
         //getLogger().info((Float.valueOf(event.getPlayer().getWalkSpeed())).toString());
 //        float playerDefaultWalk = player.getWalkSpeed();
 
+    }
+
+    @EventHandler
+    public void onEntityExhaustion(EntityExhaustionEvent event) {
+        getLogger().info(event.getExhaustionReason().toString() + "&" + event.getExhaustion());
+        if (event.getExhaustionReason() == JUMP_SPRINT || event.getExhaustionReason() == SPRINT) {
+            event.setExhaustion(0);
+        }
     }
 }
